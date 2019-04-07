@@ -1,0 +1,21 @@
+Evenement_Dashboard:
+    path:     /
+    defaults: { _controller: EvenementBundle:Default:index }
+Evenement_Dashboard2:
+    path:     /Dashboard
+    defaults: { _controller: EvenementBundle:Default:index }
+evenement_index:
+    path:     /aff
+    defaults: { _controller: EvenementBundle:Evenement:index }
+evenement_new:
+    path:     /new
+    defaults: { _controller: EvenementBundle:Evenement:new }
+evenement_show:
+    path:     /show/{idEvenement}
+    defaults: { _controller: EvenementBundle:Evenement:show }
+evenement_edit:
+    path:     /edit/{idEvenement}
+    defaults: { _controller: EvenementBundle:Evenement:edit }
+evenement_delete:
+    path:     /delete/{idEvenement}
+    defaults: { _controller: EvenementBundle:Evenement:delete }
